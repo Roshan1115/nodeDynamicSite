@@ -20,18 +20,24 @@
             <h1 class="firstH1">Hello and welcome to my site.</h1>
             <h1 class="firstH1" id="secondH1">I am a full stack web developer.</h1>
             <p id="firstP">MERN stack developement is what fascinates me the most.<span class="bold-style"> Join and become a part with me</span></p>
+            <a href="#about">
             <button class="btn-style btn-primary firstBtn" >Read more</button>
+            </a>
           </div>
           {{!-- risght div  --}}
           <div class="col-md-6 col-12 hero-text order-md-1 order-0">
             <figure>
-              <img src="/myImages/Startup life-pana.png" alt="Hero section image" id="first_png">
+              <img src="/myImages/Startup life-pana.png" alt="Hero section image" class="first_png">
             </figure>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+
+    {{>about}}
+
 
   <script src="../jq/jquery.js" type="text/javascript"></script>
   <script src="../js/bootstrap.js" type="text/javascript"></script>

@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 
-#first_png{
+html{
+  scroll-behavior: smooth;
+}
+
+.first_png{
   height: 1005;
   width: 100%;
 }
@@ -17,9 +22,8 @@
   color: #fd725e;
 }
 #firstP{
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Bad Script', cursive;
   font-size: 1.5rem;
-  color: rgba(0, 0, 0, 0.5);
 }
 #firstP span{
   color: black;
@@ -27,8 +31,28 @@
 }
 .firstBtn{
   background-color: #fd725e;
-  outline: none;
+  border: none;
 }
 .firstBtn:hover{
   background-color: #a448a4;
 }
+
+
+.main-heading{
+  color:  #fd725e;
+  font-weight: bold;
+  font-family: 'Codystar', cursive;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.289);
+}
+
+.declaration{
+  font-family: 0.7rem;
+  font-weight: lighter;
+}
+
+
+
+
+
+
+

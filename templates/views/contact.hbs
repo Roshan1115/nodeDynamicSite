@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
+
 <body>
+
   {{>navbar}}
-  <h1>This is contact.</h1>
+
+  <div class="container-fluid bg-light">
+    <div class="row py-md-5 py-5 py-lg-5">
+      <div class="col-md-10 col-12 mx-auto my-auto">
+
+        <section>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+            <label for="message" class="form-label">Write Something for me</label>
+             <textarea class="form-control"></textarea>
+            </div>
+
+            <center>
+            <button type="submit" class="btn btn-primary contact_btn firstBtn">Send</button>
+            <p class="mt-3 declaration">I will try to reply you as soon as possible. I understand some of your patience. Thank you!</p>
+            </center>
+          </form>
+        </section>
+
+      </div>
+    </div>
+  </div>
 
   <script src="../jq/jquery.js" type="text/javascript"></script>
   <script src="../js/bootstrap.js" type="text/javascript"></script>
 </body>
+
 </html>
