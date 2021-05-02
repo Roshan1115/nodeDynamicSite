@@ -3,7 +3,7 @@ const app = express();
 const path = require("path")
 const PORT = process.env.PORT || 3000
 const hbs = require("hbs")
-require("./db/connection")
+// require("./db/connection")
 
 // setting path for static files frontend
 const staticfile_path = path.join(__dirname, '../public')
@@ -15,6 +15,9 @@ app.use(express.static(staticfile_path))
 app.use('/css', express.static(path.join(__dirname, '../node_modules/bootstrap/dist/css')))
 app.use('/js', express.static(path.join(__dirname, '../node_modules/bootstrap/dist/js')))
 app.use('/jq', express.static(path.join(__dirname, '../node_modules/jquery/dist')))
+// custom styling
+// app.use('/myCss', express.static(path.join(__dirname, '../public/css')))
+app.use('/myImages', express.static(path.join(__dirname, '../public/images')))
 
 app.set('view engine', 'hbs')
 app.set('views', views_path)
