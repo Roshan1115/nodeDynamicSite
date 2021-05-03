@@ -19,19 +19,19 @@
       <div class="col-md-10 col-12 mx-auto my-auto">
 
         <section>
-          <form>
+          <form action="/contact" method="POST">
             <div class="mb-3">
               <label for="name" class="form-label">Your Name</label>
-              <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+              <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
             <label for="message" class="form-label">Write Something for me</label>
-             <textarea class="form-control"></textarea>
+             <textarea class="form-control" id="message" name="message"></textarea>
             </div>
 
             <center>
